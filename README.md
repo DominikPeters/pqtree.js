@@ -26,9 +26,9 @@ Use it as follows in HTML:
     process = Module.cwrap('Process', 'string', ['string']);
   }
   
-  message = "6;001010;011010;011101";
+  var message = "6;001010;011010;011101";
   // 6 columns, semicolon, then a semicolon-separated list of rows of the 0/1 matrix
-  output = process(message);
+  var output = process(message);
   // output == "(0 [(3 5) 1 2 4])"
   
   message = "5;11000;00110;11110;10101";
