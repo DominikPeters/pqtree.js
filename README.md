@@ -24,7 +24,9 @@ Use it as follows in HTML:
   var process;
   PQTreeModule().then(function (Module) {
     process = Module.cwrap('Process', 'string', ['string']);
-  }
+  });
+  
+  // later ..
   
   var message = "6;001010;011010;011101";
   // 6 columns, semicolon, then a semicolon-separated list of rows of the 0/1 matrix
